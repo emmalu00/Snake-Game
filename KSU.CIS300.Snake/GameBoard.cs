@@ -76,14 +76,6 @@ namespace KSU.CIS300.Snake
         private int _size;
 
         /// <summary>
-        /// Array that contains all four possible directions
-        /// to make it easier to find adjacent nodes to
-        /// search when finding the shortest path in the 
-        /// board.
-        /// </summary>
-        private Direction[] _aiDirection = new Direction[] { Direction.Up, Direction.Down, Direction.Left, Direction.Right};
-
-        /// <summary>
         /// Contains the directions left and right.
         /// </summary>
         private Direction[] _leftRight = new Direction[] { Direction.Right, Direction.Left, };
@@ -241,21 +233,6 @@ namespace KSU.CIS300.Snake
                 temp = temp.SnakeEdge;
             }
             return gameNodes;
-        }
-
-        private List<Direction> BuildPath(Dictionary<GameNode, (GameNode, Direction)> path, GameNode dest)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<Direction> FindShortestAiPath(GameNode dest)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Queue<Direction> FindLongestAiPath()
-        {
-            throw new NotImplementedException();
         }
     }
 }

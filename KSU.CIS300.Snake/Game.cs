@@ -93,7 +93,7 @@ namespace KSU.CIS300.Snake
         /// </summary>
         /// <param name="size"> Size of the snake. </param>
         /// <param name="speed"> Speed of the snake. </param>
-        public Game(int size, int speed)
+        public Game()
         {
             Size = 30;
             Board = new GameBoard(30);

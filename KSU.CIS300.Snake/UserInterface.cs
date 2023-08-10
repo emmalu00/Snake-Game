@@ -74,12 +74,11 @@ namespace KSU.CIS300.Snake
         /// </summary>
         /// <param name="size"> Given size. </param>
         /// <param name="speed"> Given speed. </param>
-        private void NewGame(int size, int speed)
+        private void NewGame()
         {
            
             _cancelSource.Cancel();
-            _size = size;
-            _game = new Game(size, speed);
+            _game = new Game();
             uxPictureBox.Height = 600;
             uxPictureBox.Width = 600;
             this.Size = new Size(630, 670);
@@ -138,36 +137,6 @@ namespace KSU.CIS300.Snake
         }
 
         /// <summary>
-        /// Click event handler for an easy level game.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void uxEasyGame_Click(object sender, EventArgs e)
-        {
-            NewGame(10, 250);
-        }
-
-        /// <summary>
-        /// Click event handler for a normal level game.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void uxNormalGame_Click(object sender, EventArgs e)
-        {
-            NewGame(20, 150);
-        }
-
-        /// <summary>
-        /// Click event handler for a hard level game.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void uxHardGame_Click(object sender, EventArgs e)
-        {
-            NewGame(30, 100);
-        }
-
-        /// <summary>
         /// Key down event handler.
         /// </summary>
         /// <param name="sender"></param>
@@ -205,7 +174,7 @@ namespace KSU.CIS300.Snake
 
         private void uxNewGame_Click(object sender, EventArgs e)
         {
-            NewGame(30, 100);
+            NewGame();
         }
 
     }
