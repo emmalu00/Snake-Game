@@ -1,6 +1,6 @@
 # snake-game
 
-## Snake Game Background
+## Background
 This project creates a video game classic: Snake. Snake was originally a cellphone game launched on the Nokia in the late ‘90s. In its simplest form, you control a snake that can go up, left, right, or down. The game board also contains one piece of snake food at a random location. When the snake eats this food, points are awarded, a new piece of food is generated in an a random unoccupied location, and the snake body grows. The goal is to eat as much snake food as you can. If the snake runs into the edge of the screen or a section of itself, the game is over.
 
 ## User Interface
@@ -15,3 +15,6 @@ If the snake runs into the edge of the screen or into itself, the game will end 
 
 ## Software Architecture
 The software architecture can be found in the _**SnakeGameUML.pdf**_ file.
+
+## Running the Program
+This program should be cloned to your local machine and be ran with Microsoft Visual Studio.
